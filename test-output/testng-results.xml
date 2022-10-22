@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="11" total="24" passed="13" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-10-22T15:28:12 GST" name="Default suite" finished-at="2022-10-22T15:31:49 GST" duration-ms="217098">
+    <groups>
+    </groups>
+    <test started-at="2022-10-22T15:28:12 GST" name="positivetestcase" finished-at="2022-10-22T15:29:29 GST" duration-ms="76581">
+      <class name="tests.HomePageTest">
+        <test-method signature="confirmLoginedUser()[pri:0, instance:tests.HomePageTest@3270d194]" started-at="2022-10-22T15:28:55 GST" name="confirmLoginedUser" description="Confirm the logined user" finished-at="2022-10-22T15:29:15 GST" duration-ms="20046" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- confirmLoginedUser -->
+        <test-method signature="searchTheKeyword()[pri:0, instance:tests.HomePageTest@3270d194]" started-at="2022-10-22T15:29:15 GST" name="searchTheKeyword" description="Enter keyword to search" finished-at="2022-10-22T15:29:18 GST" duration-ms="2994" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchTheKeyword -->
+        <test-method signature="selectItemFromResult()[pri:0, instance:tests.HomePageTest@3270d194]" started-at="2022-10-22T15:29:18 GST" name="selectItemFromResult" description="Select 3rd item from search-result-list " finished-at="2022-10-22T15:29:24 GST" duration-ms="6516" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectItemFromResult -->
+        <test-method signature="logout()[pri:0, instance:tests.HomePageTest@3270d194]" started-at="2022-10-22T15:29:24 GST" name="logout" description="Logout from user logined page" finished-at="2022-10-22T15:29:28 GST" duration-ms="3601" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+      </class> <!-- tests.HomePageTest -->
+      <class name="tests.LoginPageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.LoginPageTest@4c583ecf]" started-at="2022-10-22T15:28:12 GST" name="setUp" finished-at="2022-10-22T15:28:22 GST" duration-ms="10152" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="signup()[pri:0, instance:tests.LoginPageTest@4c583ecf]" started-at="2022-10-22T15:28:22 GST" name="signup" description="user sign up" finished-at="2022-10-22T15:28:52 GST" duration-ms="29584" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signup -->
+        <test-method signature="login()[pri:0, instance:tests.LoginPageTest@4c583ecf]" started-at="2022-10-22T15:28:52 GST" name="login" description="verify login with valid credentials" finished-at="2022-10-22T15:28:55 GST" duration-ms="2593" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:tests.LoginPageTest@4c583ecf]" started-at="2022-10-22T15:29:28 GST" name="quitBrowser" finished-at="2022-10-22T15:29:29 GST" duration-ms="762" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+      </class> <!-- tests.LoginPageTest -->
+    </test> <!-- positivetestcase -->
+    <test started-at="2022-10-22T15:29:29 GST" name="negativetestcase" finished-at="2022-10-22T15:31:49 GST" duration-ms="140472">
+      <class name="tests.LoginPageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.LoginPageTest@1573f9fc]" started-at="2022-10-22T15:29:29 GST" name="setUp" finished-at="2022-10-22T15:29:35 GST" duration-ms="6261" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="loginWithInvalidEmail()[pri:0, instance:tests.LoginPageTest@1573f9fc]" started-at="2022-10-22T15:29:35 GST" name="loginWithInvalidEmail" description="verify login with invalid credentials : invalid Email, no password and no email invalid password " finished-at="2022-10-22T15:29:40 GST" duration-ms="4854" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithInvalidEmail -->
+        <test-method signature="loginWithInvalidEmailAndValidPassword()[pri:0, instance:tests.LoginPageTest@1573f9fc]" started-at="2022-10-22T15:29:40 GST" name="loginWithInvalidEmailAndValidPassword" description="verify login with invalid credentials : invalid Email, valid password " finished-at="2022-10-22T15:30:42 GST" duration-ms="62357" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithInvalidEmailAndValidPassword -->
+        <test-method signature="loginWithValidEmailAndInvalidPassword()[pri:0, instance:tests.LoginPageTest@1573f9fc]" started-at="2022-10-22T15:30:42 GST" name="loginWithValidEmailAndInvalidPassword" description="verify login with invalid credentials : valid Email, invalid password " finished-at="2022-10-22T15:31:21 GST" duration-ms="38813" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithValidEmailAndInvalidPassword -->
+        <test-method signature="loginWithUnRegisteredEmailAndPassword()[pri:0, instance:tests.LoginPageTest@1573f9fc]" started-at="2022-10-22T15:31:21 GST" name="loginWithUnRegisteredEmailAndPassword" description="verify login with invalid credentials : Unregistered Email and password " finished-at="2022-10-22T15:31:37 GST" duration-ms="16538" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithUnRegisteredEmailAndPassword -->
+        <test-method signature="loginEyeClickValidation()[pri:0, instance:tests.LoginPageTest@1573f9fc]" started-at="2022-10-22T15:31:37 GST" name="loginEyeClickValidation" description=" Password eye-click visibility " finished-at="2022-10-22T15:31:41 GST" duration-ms="3180" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginEyeClickValidation -->
+        <test-method signature="loginWithForgotPasswordButtonWithoutEmail()[pri:0, instance:tests.LoginPageTest@1573f9fc]" started-at="2022-10-22T15:31:41 GST" name="loginWithForgotPasswordButtonWithoutEmail" description="verify forgot-password-button without email address" finished-at="2022-10-22T15:31:45 GST" duration-ms="4213" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithForgotPasswordButtonWithoutEmail -->
+        <test-method signature="loginWithForgotPasswordButton()[pri:0, instance:tests.LoginPageTest@1573f9fc]" started-at="2022-10-22T15:31:45 GST" name="loginWithForgotPasswordButton" description="verify forgot-password-button with valid email" finished-at="2022-10-22T15:31:48 GST" duration-ms="3613" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithForgotPasswordButton -->
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:tests.LoginPageTest@1573f9fc]" started-at="2022-10-22T15:31:48 GST" name="quitBrowser" finished-at="2022-10-22T15:31:49 GST" duration-ms="609" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+      </class> <!-- tests.LoginPageTest -->
+    </test> <!-- negativetestcase -->
+  </suite> <!-- Default suite -->
+</testng-results>
